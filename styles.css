@@ -35,11 +35,14 @@ header {
 header h1 {
     margin: 0;
     color: #BB86FC; /* Morado claro */
+    font-family: 'Press Start 2P', cursive; /* Fuente pixelada */
 }
 
+/* Navegación */
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -52,11 +55,12 @@ section {
     padding: 20px;
     margin: 20px 0;
     border-bottom: 2px solid #8A2BE2;
-    text-align: center;  /* Centra el contenido de cada sección */
+    text-align: left;  /* Alinear el texto a la izquierda */
 }
 
 h2 {
     color: #BB86FC;
+    font-family: 'Press Start 2P', cursive; /* Fuente pixelada para títulos */
 }
 
 p, ul {
