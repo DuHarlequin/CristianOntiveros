@@ -53,9 +53,6 @@ section {
     margin: 20px 0;
     border-bottom: 2px solid #8A2BE2;
     text-align: center;  /* Centra el contenido de cada sección */
-       opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease-in-out;
 }
 
 h2 {
@@ -86,10 +83,14 @@ footer {
     }
 }
 
-/* Añadir animaciones a las secciones */
+/* Animaciones */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-in-out;
+}
 
 section.visible {
     opacity: 1;
     transform: translateY(0);
 }
-
