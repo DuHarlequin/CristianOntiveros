@@ -9,7 +9,7 @@ body {
   
   header {
     height: 100vh;
-    background-image: url('tu-imagen-de-fondo.jpg');
+    background-image: url('https://i.pinimg.com/enabled/564x/41/e9/11/41e911bfd4cd4a3369446e4a63c6b728.jpg');
     background-size: cover;
     background-attachment: fixed;
     display: flex;
