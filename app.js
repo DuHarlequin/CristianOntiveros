@@ -1,5 +1,19 @@
-// Script para actualizar las barras de progreso basado en el porcentaje
-document.querySelectorAll('.progress').forEach(progress => {
-    const percent = progress.getAttribute('data-percent');
-    progress.style.width = percent + '%';
+document.addEventListener("DOMContentLoaded", () => {
+    // Función para actualizar el ancho de la barra de progreso
+    const progressBars = document.querySelectorAll(".progress-bar");
+    
+    progressBars.forEach(bar => {
+        const value = bar.getAttribute("data-value");
+        bar.style.width = `${value}%`;
+    });
+
+    // Función para copiar correo
+    document.getElementById('copyEmail').addEventListener('click', function() {
+        const email = 'cristian@mail.com';
+        navigator.clipboard.writeText(email).then(() => {
+            alert("Correo copiado: " + email);
+        }).catch(err => {
+            console.log('Error al copiar el correo: ', err);
+        });
+    });
 });

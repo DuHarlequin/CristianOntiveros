@@ -3,65 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cristian Eduardo Ontiveros Castillo - Portafolio</title>
+    <title>Portafolio de Cristian Ontiveros Castillo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="content">
-        <!-- Sección de bienvenida -->
-        <section id="inicio">
-            <h1>Bienvenido a mi Portafolio</h1>
-            <p>Soy Cristian Eduardo Ontiveros Castillo, un desarrollador apasionado por el software y el aprendizaje continuo.</p>
-        </section>
+    <!-- Sección de portada -->
+    <header class="parallax">
+        <div class="intro">
+            <h1>Cristian Ontiveros Castillo</h1>
+            <p>Desarrollador y entusiasta de la tecnología</p>
+        </div>
+    </header>
 
-        <!-- Sección de Tecnologías -->
-        <section id="tecnologias">
-            <h2>Tecnologías</h2>
+    <!-- Sección sobre mí -->
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy Cristian Ontiveros Castillo, un apasionado desarrollador con conocimientos en varias tecnologías. Me encanta aprender rápido y resolver problemas bajo presión.</p>
+    </section>
 
-            <div class="progress-container">
-                <!-- HTML -->
-                <div class="progress-item">
-                    <span>HTML</span>
-                    <div class="progress-bar">
-                        <div class="progress" data-percent="90">
-                            <span class="percent">90%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CSS -->
-                <div class="progress-item">
-                    <span>CSS</span>
-                    <div class="progress-bar">
-                        <div class="progress" data-percent="85">
-                            <span class="percent">85%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- JavaScript -->
-                <div class="progress-item">
-                    <span>JavaScript</span>
-                    <div class="progress-bar">
-                        <div class="progress" data-percent="80">
-                            <span class="percent">80%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- C# -->
-                <div class="progress-item">
-                    <span>C#</span>
-                    <div class="progress-bar">
-                        <div class="progress" data-percent="75">
-                            <span class="percent">75%</span>
-                        </div>
-                    </div>
+    <!-- Sección de tecnologías -->
+    <section id="technologies">
+        <h2>Tecnologías</h2>
+        <div class="skills">
+            <div class="skill">
+                <p>HTML</p>
+                <div class="progress">
+                    <div class="progress-bar" data-value="90">90%</div>
                 </div>
             </div>
-        </section>
-    </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="progress">
+                    <div class="progress-bar" data-value="85">85%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress">
+                    <div class="progress-bar" data-value="80">80%</div>
+                </div>
+            </div>
+            <!-- Añadir más habilidades aquí -->
+        </div>
+    </section>
 
-    <script src="app.js"></script> <!-- Se enlaza el archivo app.js -->
+    <!-- Sección de proyectos -->
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <p>Actualmente estoy trabajando en nuevos proyectos. ¡Pronto estarán disponibles!</p>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contact">
+        <h2>Contactar</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <button id="copyEmail">Copiar correo: <span>cristian@mail.com</span></button>
+    </section>
+
+    <script src="app.js"></script>
 </body>
 </html>
