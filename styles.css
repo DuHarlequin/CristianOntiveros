@@ -3,14 +3,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: #1e1e1e;
-    background-image: url('https://i.pinimg.com/enabled/564x/41/e9/11/41e911bfd4cd4a3369446e4a63c6b728.jpg');
-    background-size: cover;
-    background-attachment: fixed;
     color: #ffffff;
   }
   
   header {
     height: 100vh;
+    background-image: url('https://i.pinimg.com/enabled/564x/41/e9/11/41e911bfd4cd4a3369446e4a63c6b728.jpg');
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,10 +29,9 @@ body {
   section {
     padding: 20px;
     text-align: center;
-    border-bottom: 1px solid #4a148c; /* Un tono oscuro de morado */
-    background: rgba(44, 44, 44, 0.9);
-    border-radius: 8px;
+    background: rgba(44, 44, 44, 0.7); /* Fondo translúcido */
     margin-bottom: 20px;
+    border-radius: 8px;
   }
   
   footer {
@@ -43,6 +42,13 @@ body {
     position: fixed;
     width: 100%;
     bottom: 0;
+  }
+  
+  /* Estilos para paralaje */
+  .parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
   }
   
   /* Responsivo */
