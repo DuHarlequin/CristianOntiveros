@@ -1,7 +1,7 @@
 /* Estilo general */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #121212, #1a1a1a); /* Fondo degradado */
+    background-color: #000000; /* Fondo negro */
     color: #FFFFFF; /* Texto blanco */
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body {
     z-index: 2; /* Coloca el contenido principal por encima de las luces */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
     border-radius: 10px; /* Bordes redondeados */
-    background-color: #1E1E1E; /* Fondo del contenedor */
+    background-color: rgba(30, 30, 30, 0.8); /* Fondo del contenedor con un poco de transparencia */
 }
 
 /* Enlaces y botones */
@@ -29,25 +29,25 @@ a {
     transition: color 0.3s ease, transform 0.3s ease; /* Efecto de transición */
 }
 
-    a:hover {
-        color: #BB86FC; /* Morado más claro al pasar el mouse */
-        transform: scale(1.1); /* Zoom suave en hover */
-    }
+a:hover {
+    color: #BB86FC; /* Morado más claro al pasar el mouse */
+    transform: scale(1.1); /* Zoom suave en hover */
+}
 
 /* Header */
 header {
-    background-color: #1E1E1E;
+    background-color: rgba(30, 30, 30, 0.8); /* Fondo del header con un poco de transparencia */
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
 }
 
-    header h1 {
-        margin: 0;
-        color: #BB86FC; /* Morado claro */
-        font-family: 'Press Start 2P', cursive; /* Fuente pixelada */
-    }
+header h1 {
+    margin: 0;
+    color: #BB86FC; /* Morado claro */
+    font-family: 'Press Start 2P', cursive; /* Fuente pixelada */
+}
 
 /* Navegación */
 nav ul {
@@ -56,10 +56,10 @@ nav ul {
     text-align: center;
 }
 
-    nav ul li {
-        display: inline;
-        margin: 0 15px;
-    }
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
 
 /* Secciones */
 section {
@@ -73,13 +73,13 @@ section {
     z-index: 2; /* Mantener las secciones por encima de las luces */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
     border-radius: 10px; /* Bordes redondeados */
-    background-color: #1E1E1E; /* Fondo de la sección */
+    background-color: rgba(30, 30, 30, 0.8); /* Fondo de la sección con un poco de transparencia */
 }
 
-    section.visible {
-        opacity: 1;
-        transform: scale(1);
-    }
+section.visible {
+    opacity: 1;
+    transform: scale(1);
+}
 
 h2 {
     color: #BB86FC;
@@ -108,7 +108,6 @@ p, ul {
         transform: translateY(0);
         opacity: 1;
     }
-
     100% {
         transform: translateY(-100vh); /* Las luces suben a través de toda la pantalla */
         opacity: 0;
@@ -119,7 +118,7 @@ p, ul {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #1E1E1E;
+    background-color: rgba(30, 30, 30, 0.8); /* Fondo del footer con un poco de transparencia */
     color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
