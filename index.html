@@ -1,62 +1,217 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Importar la fuente pixelada -->
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>
+        Perfil - Cristian Eduardo Ontiveros Castillo
+    </title>
+    <style>
+        body {
+            background-color: #6e6e6e;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #4a4a4a;
+            border: 5px solid #3a3a3a;
+            border-radius: 10px;
+        }
+
+        .header, .section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #3a3a3a;
+            border: 3px solid #2a2a2a;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+            .header img {
+                width: 100px;
+                height: auto;
+                border-radius: 50%;
+            }
+
+            .header .info {
+                flex: 1;
+                margin-left: 20px;
+            }
+
+                .header .info h1 {
+                    margin: 0;
+                    font-size: 24px;
+                }
+
+                .header .info p {
+                    margin: 5px 0;
+                }
+
+            .header .stats {
+                text-align: right;
+            }
+
+                .header .stats p {
+                    margin: 5px 0;
+                }
+
+            .section h2 {
+                margin: 0;
+                font-size: 20px;
+            }
+
+            .section .content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+                .section .content .item {
+                    width: 48%;
+                    margin-bottom: 20px;
+                }
+
+                    .section .content .item h3 {
+                        margin: 0;
+                        font-size: 18px;
+                    }
+
+                    .section .content .item p {
+                        margin: 5px 0;
+                    }
+
+                    .section .content .item .progress {
+                        background-color: #2a2a2a;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        margin-top: 5px;
+                        height: 10px;
+                    }
+
+                        .section .content .item .progress .bar {
+                            height: 100%;
+                        }
+
+                            .section .content .item .progress .bar.blue {
+                                background-color: #00f;
+                            }
+
+                            .section .content .item .progress .bar.green {
+                                background-color: #0f0;
+                            }
+
+                            .section .content .item .progress .bar.red {
+                                background-color: #f00;
+                            }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #3a3a3a;
+            border: 3px solid #2a2a2a;
+            border-radius: 10px;
+        }
+
+            .footer p {
+                margin: 5px 0;
+            }
+
+        .section + .section {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Bienvenido a mi portafolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#sobre-mi">Sobre mí</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#tecnologias">Tecnologias</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div class="header">
+            <img alt="Foto de perfil" height="100" src="https://i.imgur.com/48hZfAA.png" width="100" />
+            <div class="info">
+                <h1>Cristian Eduardo Ontiveros Castillo</h1>
+                <p>Soy un apasionado programador con habilidades en desarrollo web y algunos lenguajes. Me encanta aprender rápidamente y se trabajar bajo presión.</p>
+                <p>Actualmente estoy desarrollando mi primer proyecto y buscando oportunidades para mejorar mis habilidades.</p>
+            </div>
+            <div class="stats">
+                <p>HP: 500/500</p>
+                <p>MANA: 200/200</p>
+                <p>RACE: HUMAN</p>
+                <p>CLASS: PROGRAMMER</p>
+                <p>LEVEL: 1</p>
+            </div>
+        </div>
 
-        <section id="inicio">
-            <h2>Hola, soy Cristian Eduardo Ontiveros Castillo</h2>
-            <p>Desarrollador en crecimiento apasionado por la tecnología y los videojuegos.</p>
-        </section>
+        <div class="section">
+            <h2>TECNOLOGIAS</h2>
+            <div class="content">
+                <div class="item">
+                    <h3>HTML</h3>
+                    <p>level 8/10</p>
+                    <div class="progress"><div class="bar blue" style="width:80%;"></div></div>
+                </div>
+                <div class="item">
+                    <h3>CSS</h3>
+                    <p>level 7/10</p>
+                    <div class="progress"><div class="bar blue" style="width:70%;"></div></div>
+                </div>
+                <div class="item">
+                    <h3>JavaScript</h3>
+                    <p>level 6/10</p>
+                    <div class="progress"><div class="bar blue" style="width:60%;"></div></div>
+                </div>
+                <div class="item">
+                    <h3>C#</h3>
+                    <p>level 7/10</p>
+                    <div class="progress"><div class="bar green" style="width:70%;"></div></div>
+                </div>
+                <div class="item">
+                    <h3>PHP</h3>
+                    <p>level 5/10</p>
+                    <div class="progress"><div class="bar green" style="width:50%;"></div></div>
+                </div>
+            </div>
+        </div>
 
-        <section id="sobre-mi">
-            <h2>Sobre mí</h2>
-            <p>Soy un desarrollador que aprende rápido y puede adaptarse a diferentes entornos. Disfruto del desafío de resolver problemas bajo presión.</p>
-        </section>
+        <div class="section">
+            <h2>SKILL MASTERY</h2>
+            <div class="content">
+                <div class="item">
+                    <h3>Desarrollo Web</h3>
+                    <p>level 8/10</p>
+                    <div class="progress"><div class="bar green" style="width:80%;"></div></div>
+                </div>
+                <div class="item">
+                    <h3>Programación Orientada a Objetos</h3>
+                    <p>level 7/10</p>
+                    <div class="progress"><div class="bar green" style="width:70%;"></div></div>
+                </div>
+                <div class="item">
+                    <h3>Bases de Datos</h3>
+                    <p>level 6/10</p>
+                    <div class="progress"><div class="bar green" style="width:60%;"></div></div>
+                </div>
+            </div>
+        </div>
 
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-            <p>Próximamente... Estoy trabajando en mi primer proyecto, ¡mantente atento!</p>
-        </section>
+        <div class="section">
+            <h2>TRAINING LOG</h2>
+            <div class="content">
+                <div class="item">
+                    <h3>Estudios Autodidactas</h3>
+                    <p>Programación web y de videojuegos</p>
+                    <p>En progreso</p>
+                </div>
+            </div>
+        </div>
 
-        <section id="tecnologias">
-            <h2>Tecnologias</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>C#, C++, PHP</li>
-                <li>SQL, MySQL</li>
-            </ul>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Puedes contactarme en <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a>.</p>
-        </section>
-
-        <footer>
-            <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
-        </footer>
+        <div class="footer">
+            <h2>ACHIEVEMENT TROPHY</h2>
+            <p>Próximamente...</p>
+        </div>
     </div>
-    
-    <script src="script.js"></script>
 </body>
 </html>
