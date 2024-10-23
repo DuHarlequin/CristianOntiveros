@@ -1,101 +1,83 @@
-/* Reset de márgenes */
-* {
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Fondo que se desplaza con la página */
-body {
-    background-image: url('https://i.pinimg.com/enabled/564x/41/e9/11/41e911bfd4cd4a3369446e4a63c6b728.jpg'); /* Cambia a tu imagen */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
-}
-
-/* Estilo general del contenido */
-.content {
-    padding: 40px;
-    color: #fff;
     text-align: center;
-    min-height: 100vh;
 }
 
-/* Sección de bienvenida */
-#inicio {
-    margin-bottom: 60px;
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-#inicio h1 {
-    font-size: 48px;
-    color: #fff;
+h1 {
+    font-size: 3em;
+    margin: 20px 0;
 }
 
-#inicio p {
-    font-size: 18px;
-    color: #bbb;
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-/* Sección de tecnologías */
-#tecnologias {
-    margin-top: 60px;
-}
-
-#tecnologias h2 {
-    font-size: 36px;
-    color: #fff;
-    margin-bottom: 30px;
-}
-
-/* Contenedor de las barras de progreso */
+/* Estilo de la sección de tecnologías */
 .progress-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
 }
 
-/* Estilo de cada barra */
 .progress-item {
-    width: 80%;
     text-align: left;
 }
 
-.progress-item span {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 5px;
-    display: block;
-}
-
 .progress-bar {
-    width: 100%;
     background-color: #333;
-    border-radius: 20px;
-    height: 15px;
+    border-radius: 25px;
+    height: 30px;
+    position: relative;
     overflow: hidden;
-    box-shadow: 0 0 10px #800080, 0 0 20px #800080;
 }
 
 .progress {
+    background-color: #a23dfa;
     height: 100%;
-    background-color: #800080;
-    box-shadow: 0 0 20px #800080, 0 0 30px #ff00ff;
+    width: 0;
+    position: relative;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: width 1s ease-in-out;
 }
 
-/* Responsividad */
+.percent {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Estilo responsivo */
 @media (max-width: 768px) {
-    .progress-item {
-        width: 100%;
+    h1 {
+        font-size: 2em;
     }
 
-    #inicio h1 {
-        font-size: 36px;
+    h2 {
+        font-size: 1.5em;
     }
 
-    #inicio p {
-        font-size: 16px;
+    .progress-bar {
+        height: 25px;
     }
-} 
+
+    .percent {
+        font-size: 0.9em;
+    }
+}
