@@ -6,6 +6,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    overflow-x: hidden; /* Evitar scroll horizontal */
+    position: relative; /* Para que z-index funcione con los hijos */
 }
 
 /* Contenedor principal */
@@ -13,6 +15,32 @@ body {
     max-width: 1200px;  /* Limita el ancho en pantallas grandes */
     margin: 0 auto;     /* Centra el contenido horizontalmente */
     padding: 20px;      /* Espaciado interno */
+    position: relative; /* Asegura que los elementos de la página queden encima de las luces */
+    z-index: 2; /* Coloca el contenido principal por encima de las luces */
+}
+
+/* Estilo para las luces */
+.light {
+    position: fixed; /* Fija las luces en la pantalla */
+    background-color: rgba(138, 43, 226, 0.8); /* Color morado brillante */
+    border-radius: 50%;
+    bottom: -300px; /* Las luces comienzan más abajo */
+    animation: float 8s infinite ease-in-out;
+    box-shadow: 0 0 30px 10px rgba(138, 43, 226, 0.5); /* Efecto de resplandor */
+    z-index: 1; /* Coloca las luces detrás del contenido */
+    pointer-events: none; /* Evita que las luces bloqueen interacciones del usuario */
+}
+
+/* Animación de luces */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh); /* Las luces suben a través de toda la pantalla */
+        opacity: 0;
+    }
 }
 
 /* Enlaces y botones */
@@ -56,6 +84,10 @@ section {
     margin: 20px 0;
     border-bottom: 2px solid #8A2BE2;
     text-align: left;  /* Alinear el texto a la izquierda */
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.6s ease-in-out;
+    z-index: 2; /* Mantener las secciones por encima de las luces */
 }
 
 h2 {
@@ -65,6 +97,12 @@ h2 {
 
 p, ul {
     color: #FFFFFF;
+}
+
+/* Animación al aparecer las secciones */
+section.visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* Footer */
@@ -85,16 +123,4 @@ footer {
         display: block;
         margin: 10px 0;
     }
-}
-
-/* Animaciones */
-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease-in-out;
-}
-
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
 }
