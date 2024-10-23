@@ -1,153 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>
-        Perfil - Cristian Eduardo Ontiveros Castillo
-    </title>
-    <style>
-        body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #1e1e1e;
-  color: #ffffff;
-}
-
-header {
-  background: #2d2d2d;
-  color: #b39ddb; /* Un tono de morado */
-  padding: 10px 0;
-  text-align: center;
-  box-shadow: 0 4px 2px -2px gray;
-}
-
-nav ul {
-  background: #333333;
-  color: #ffffff;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 10px;
-}
-
-nav ul li a {
-  color: #b39ddb; /* Morado */
-  text-decoration: none;
-}
-
-main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 20px;
-  border: 1px solid #4a148c; /* Un tono oscuro de morado */
-  padding: 10px;
-  background: #2c2c2c;
-  border-radius: 8px;
-}
-
-footer {
-  background: #2d2d2d;
-  color: #b39ddb;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Desarrollador</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <img alt="Foto de perfil" height="100" src="https://i.imgur.com/48hZfAA.png" width="100" />
-            <div class="info">
-                <h1>Cristian Eduardo Ontiveros Castillo</h1>
-                <p>Soy un apasionado programador con habilidades en desarrollo web y algunos lenguajes. Me encanta aprender rápidamente y se trabajar bajo presión.</p>
-                <p>Actualmente estoy desarrollando mi primer proyecto y buscando oportunidades para mejorar mis habilidades.</p>
-            </div>
-            <div class="stats">
-                <p>HP: 500/500</p>
-                <p>MANA: 200/200</p>
-                <p>RACE: HUMAN</p>
-                <p>CLASS: PROGRAMMER</p>
-                <p>LEVEL: 1</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>TECNOLOGIAS</h2>
-            <div class="content">
-                <div class="item">
-                    <h3>HTML</h3>
-                    <p>level 8/10</p>
-                    <div class="progress"><div class="bar blue" style="width:80%;"></div></div>
-                </div>
-                <div class="item">
-                    <h3>CSS</h3>
-                    <p>level 7/10</p>
-                    <div class="progress"><div class="bar blue" style="width:70%;"></div></div>
-                </div>
-                <div class="item">
-                    <h3>JavaScript</h3>
-                    <p>level 6/10</p>
-                    <div class="progress"><div class="bar blue" style="width:60%;"></div></div>
-                </div>
-                <div class="item">
-                    <h3>C#</h3>
-                    <p>level 7/10</p>
-                    <div class="progress"><div class="bar green" style="width:70%;"></div></div>
-                </div>
-                <div class="item">
-                    <h3>PHP</h3>
-                    <p>level 5/10</p>
-                    <div class="progress"><div class="bar green" style="width:50%;"></div></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>SKILL MASTERY</h2>
-            <div class="content">
-                <div class="item">
-                    <h3>Desarrollo Web</h3>
-                    <p>level 8/10</p>
-                    <div class="progress"><div class="bar green" style="width:80%;"></div></div>
-                </div>
-                <div class="item">
-                    <h3>Programación Orientada a Objetos</h3>
-                    <p>level 7/10</p>
-                    <div class="progress"><div class="bar green" style="width:70%;"></div></div>
-                </div>
-                <div class="item">
-                    <h3>Bases de Datos</h3>
-                    <p>level 6/10</p>
-                    <div class="progress"><div class="bar green" style="width:60%;"></div></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>TRAINING LOG</h2>
-            <div class="content">
-                <div class="item">
-                    <h3>Estudios Autodidactas</h3>
-                    <p>Programación web y de videojuegos</p>
-                    <p>En progreso</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <h2>ACHIEVEMENT TROPHY</h2>
-            <p>Próximamente...</p>
-        </div>
-    </div>
+  <header class="parallax">
+    <h1>Bienvenido a Mi Portafolio</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#about">Sobre Mí</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="home">
+      <h2>Inicio</h2>
+      <p>Transformando ideas en realidades digitales.</p>
+    </section>
+    <section id="about">
+      <h2>Sobre Mí</h2>
+      <p>Desarrollador Full-Stack con pasión por la innovación.</p>
+    </section>
+    <section id="projects">
+      <h2>Proyectos</h2>
+      <p>Explora mis proyectos destacados.</p>
+    </section>
+    <section id="contact">
+      <h2>Contacto</h2>
+      <p>Contáctame en contacto@miportafolio.com</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Mi Portafolio de Desarrollador</p>
+  </footer>
+  <script src="app.js"></script>
 </body>
 </html>
