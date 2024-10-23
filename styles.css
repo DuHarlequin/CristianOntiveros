@@ -1,7 +1,7 @@
 /* Estilo general */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Fondo negro */
+    background: linear-gradient(135deg, #121212, #1a1a1a); /* Fondo degradado */
     color: #FFFFFF; /* Texto blanco */
     margin: 0;
     padding: 0;
@@ -12,19 +12,90 @@ body {
 
 /* Contenedor principal */
 .container {
-    max-width: 1200px;  /* Limita el ancho en pantallas grandes */
-    margin: 0 auto;     /* Centra el contenido horizontalmente */
-    padding: 20px;      /* Espaciado interno */
+    max-width: 1200px; /* Limita el ancho en pantallas grandes */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Espaciado interno */
     position: relative; /* Asegura que los elementos de la página queden encima de las luces */
     z-index: 2; /* Coloca el contenido principal por encima de las luces */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #1E1E1E; /* Fondo del contenedor */
+}
+
+/* Enlaces y botones */
+a {
+    color: #8A2BE2; /* Morado */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Efecto de transición */
+}
+
+    a:hover {
+        color: #BB86FC; /* Morado más claro al pasar el mouse */
+        transform: scale(1.1); /* Zoom suave en hover */
+    }
+
+/* Header */
+header {
+    background-color: #1E1E1E;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+    header h1 {
+        margin: 0;
+        color: #BB86FC; /* Morado claro */
+        font-family: 'Press Start 2P', cursive; /* Fuente pixelada */
+    }
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+/* Secciones */
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border-bottom: 2px solid #8A2BE2;
+    text-align: left; /* Alinear el texto a la izquierda */
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.6s ease-in-out;
+    z-index: 2; /* Mantener las secciones por encima de las luces */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #1E1E1E; /* Fondo de la sección */
+}
+
+    section.visible {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+h2 {
+    color: #BB86FC;
+    font-family: 'Press Start 2P', cursive; /* Fuente pixelada para títulos */
+}
+
+p, ul {
+    color: #FFFFFF;
 }
 
 /* Estilo para las luces */
 .light {
-    position: fixed; /* Fija las luces en la pantalla */
+    position: absolute; /* Fija las luces relativas a la página */
     background-color: rgba(138, 43, 226, 0.8); /* Color morado brillante */
     border-radius: 50%;
-    bottom: -300px; /* Las luces comienzan más abajo */
+    bottom: 0; /* Las luces comienzan desde el fondo de la página */
     animation: float 8s infinite ease-in-out;
     box-shadow: 0 0 30px 10px rgba(138, 43, 226, 0.5); /* Efecto de resplandor */
     z-index: 1; /* Coloca las luces detrás del contenido */
@@ -37,72 +108,11 @@ body {
         transform: translateY(0);
         opacity: 1;
     }
+
     100% {
         transform: translateY(-100vh); /* Las luces suben a través de toda la pantalla */
         opacity: 0;
     }
-}
-
-/* Enlaces y botones */
-a {
-    color: #8A2BE2; /* Morado */
-    text-decoration: none;
-}
-
-a:hover {
-    color: #BB86FC; /* Morado más claro al pasar el mouse */
-}
-
-/* Header */
-header {
-    background-color: #1E1E1E;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    color: #BB86FC; /* Morado claro */
-    font-family: 'Press Start 2P', cursive; /* Fuente pixelada */
-}
-
-/* Navegación */
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-/* Secciones */
-section {
-    padding: 20px;
-    margin: 20px 0;
-    border-bottom: 2px solid #8A2BE2;
-    text-align: left;  /* Alinear el texto a la izquierda */
-    opacity: 0;
-    transform: scale(0.8);
-    transition: all 0.6s ease-in-out;
-    z-index: 2; /* Mantener las secciones por encima de las luces */
-}
-
-h2 {
-    color: #BB86FC;
-    font-family: 'Press Start 2P', cursive; /* Fuente pixelada para títulos */
-}
-
-p, ul {
-    color: #FFFFFF;
-}
-
-/* Animación al aparecer las secciones */
-section.visible {
-    opacity: 1;
-    transform: scale(1);
 }
 
 /* Footer */
@@ -111,6 +121,8 @@ footer {
     padding: 10px;
     background-color: #1E1E1E;
     color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra */
 }
 
 /* Responsividad */
