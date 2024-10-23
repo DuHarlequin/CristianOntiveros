@@ -1,103 +1,101 @@
+/* Reset de márgenes */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    color: #fff;
-    background-color: #121212;
-    overflow-x: hidden;
-}
-
-/* Sección Hero */
-.hero {
+/* Fondo con efecto paralaje */
+.parallax {
+    background-image: url('https://i.pinimg.com/enabled/564x/41/e9/11/41e911bfd4cd4a3369446e4a63c6b728.jpg'); /* Cambia a tu imagen */
     height: 100vh;
-    background: url('https://i.pinimg.com/enabled/564x/41/e9/11/41e911bfd4cd4a3369446e4a63c6b728.jpg') no-repeat center center fixed;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
 }
 
-.hero-content h1 {
+/* Estilo general del contenido */
+.content {
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Sección de bienvenida */
+#inicio {
+    margin-bottom: 60px;
+}
+
+#inicio h1 {
     font-size: 48px;
     color: #fff;
 }
 
-.hero-content p {
-    font-size: 24px;
-    color: #ccc;
-}
-
-/* Paralaje */
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Para oscurecer el fondo */
-    z-index: -1;
-}
-
-/* Secciones generales */
-section {
-    padding: 60px 20px;
-}
-
-h2 {
-    font-size: 36px;
-    color: #ff00ff;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-p {
+#inicio p {
     font-size: 18px;
-    line-height: 1.6;
-    color: #ddd;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 40px;
+    color: #bbb;
 }
 
-/* Sección de habilidades y tecnologías */
-.skills, .technologies {
+/* Sección de tecnologías */
+#tecnologias {
+    margin-top: 60px;
+}
+
+#tecnologias h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de las barras de progreso */
+.progress-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
-.skill, .tech {
-    width: 100%;
-    max-width: 800px;
-    margin: 10px 0;
+/* Estilo de cada barra */
+.progress-item {
+    width: 80%;
+    text-align: left;
+}
+
+.progress-item span {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 5px;
+    display: block;
 }
 
 .progress-bar {
+    width: 100%;
     background-color: #333;
-    border-radius: 25px;
-    padding: 5px;
+    border-radius: 20px;
+    height: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #800080, 0 0 20px #800080;
 }
 
 .progress {
-    height: 20px;
+    height: 100%;
     background-color: #800080;
-    border-radius: 25px;
+    box-shadow: 0 0 20px #800080, 0 0 30px #ff00ff;
+    transition: width 1s ease-in-out;
 }
 
-/* Diseño responsive */
+/* Responsividad */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 32px;
+    .progress-item {
+        width: 100%;
     }
 
-    p {
+    #inicio h1 {
+        font-size: 36px;
+    }
+
+    #inicio p {
         font-size: 16px;
     }
 }
