@@ -29,7 +29,7 @@ body {
   section {
     padding: 20px;
     text-align: center;
-    background: rgba(44, 44, 44, 0.7); /* Fondo translúcido */
+    background: rgba(44, 44, 44, 0); /* Fondo translúcido */
     margin-bottom: 20px;
     border-radius: 8px;
   }
