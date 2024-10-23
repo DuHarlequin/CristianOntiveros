@@ -1,19 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Función para actualizar el ancho de la barra de progreso
-    const progressBars = document.querySelectorAll(".progress-bar");
-    
-    progressBars.forEach(bar => {
-        const value = bar.getAttribute("data-value");
-        bar.style.width = `${value}%`;
+// Función para copiar el correo
+function copyEmail() {
+    const email = "tuemail@ejemplo.com";
+    navigator.clipboard.writeText(email).then(() => {
+        alert("Correo copiado: " + email);
     });
+}
 
-    // Función para copiar correo
-    document.getElementById('copyEmail').addEventListener('click', function() {
-        const email = 'cristian@mail.com';
-        navigator.clipboard.writeText(email).then(() => {
-            alert("Correo copiado: " + email);
-        }).catch(err => {
-            console.log('Error al copiar el correo: ', err);
-        });
+// Función para actualizar el progreso
+document.addEventListener('DOMContentLoaded', function () {
+    const progressBars = document.querySelectorAll('.progress-bar');
+    progressBars.forEach(function (bar) {
+        const percentage = bar.style.width;
+        bar.querySelector('span').textContent = percentage;
     });
 });

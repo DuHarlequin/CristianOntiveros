@@ -1,121 +1,90 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #181818;
+    font-family: 'Arial', sans-serif;
+    background: #1a1a1a;
     color: #fff;
 }
 
-header.parallax {
-    height: 100vh;
-    background-image: url('https://i.pinimg.com/enabled/564x/41/e9/11/41e911bfd4cd4a3369446e4a63c6b728.jpg');
-    background-attachment: fixed;
+/* Estilo para la portada */
+#hero {
+    background: url('https://i.pinimg.com/enabled/564x/41/e9/11/41e911bfd4cd4a3369446e4a63c6b728.jpg') no-repeat center center fixed;
     background-size: cover;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.intro h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+#hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 10px #000;
 }
 
-.intro p {
-    font-size: 24px;
+#hero p {
+    font-size: 1.5rem;
+    color: #ccc;
 }
 
-section {
-    padding: 50px 20px;
+.container {
+    padding: 50px 0;
+}
+
+/* Sección de Tecnologías */
+#tecnologias h2, #proyectos h2, #contacto h2 {
     text-align: center;
+    margin-bottom: 40px;
 }
 
-#about, #technologies, #projects, #contact {
-    background: rgba(0, 0, 0, 0.7);
-    margin: 0 auto;
-    max-width: 900px;
-    border-radius: 10px;
-    padding: 30px;
-}
-
-h2 {
-    margin-bottom: 20px;
-    font-size: 32px;
-    color: #9a5cff;
-}
-
-#projects p {
-    font-size: 18px;
-}
-
-.skills {
+.progress-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.skill {
-    text-align: left;
-    font-size: 18px;
+.progress-bar-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .progress {
-    background-color: #333;
-    border-radius: 10px;
-    height: 30px;
-    width: 100%;
     position: relative;
+    height: 30px;
+    background-color: #333;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .progress-bar {
+    position: relative;
     height: 100%;
-    width: 0;
-    background-color: #9a5cff;
-    border-radius: 10px;
-    text-align: center;
-    color: #fff;
-    line-height: 30px;
-    transition: width 0.5s ease;
-}
-
-form {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #6f00ff;
+    transition: width 0.5s ease;
+    box-shadow: 0 0 20px rgba(111, 0, 255, 0.7);
 }
 
-input, textarea {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 600px;
+.progress-bar span {
+    position: absolute;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.neon {
+    box-shadow: 0 0 10px #6f00ff, 0 0 20px #6f00ff, 0 0 40px #6f00ff;
+}
+
+/* Sección de Contactar */
+form {
+    max-width: 400px;
     margin: 0 auto;
 }
 
 button {
-    background-color: #9a5cff;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#copyEmail {
-    background-color: #333;
-    border: 2px solid #9a5cff;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 20px;
-    cursor: pointer;
-}
-
-#copyEmail span {
-    color: #9a5cff;
+    display: block;
+    margin: 20px auto;
 }
