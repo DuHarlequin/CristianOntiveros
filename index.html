@@ -3,64 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Cristian</title>
+    <title>Portafolio - Cristian Ontiveros</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
 </head>
 <body>
-    <!-- Sección de presentación -->
-    <section id="hero" class="d-flex align-items-center">
-        <div class="container text-center">
-            <h1>Cristian Eduardo Ontiveros Castillo</h1>
-            <p>Desarrollador de software en constante crecimiento, aprendiendo rápido y resolviendo problemas bajo presión.</p>
+    <div class="parallax">
+        <section id="sobre-mi">
+            <div class="container">
+                <h1>Sobre mí</h1>
+                <p>Soy Cristian Eduardo Ontiveros Castillo, un desarrollador apasionado con habilidades en múltiples lenguajes de programación. Me encanta aprender rápido y enfrentar nuevos desafíos.</p>
+            </div>
+        </section>
+    </div>
+
+    <section id="tecnologias">
+        <div class="container">
+            <h2>Tecnologías</h2>
+            <div class="skill">
+                <p>HTML</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-neon" role="progressbar" style="width: 90%;">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-neon" role="progressbar" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <!-- Agrega más tecnologías con el mismo formato -->
         </div>
     </section>
 
-    <!-- Sección de Tecnologías -->
-    <section id="tecnologias" class="container">
-        <h2>Tecnologías</h2>
-        <div class="progress-container">
-            <div class="progress-bar-container">
-                <label>HTML</label>
-                <div class="progress neon">
-                    <div class="progress-bar" style="width: 80%;"><span>80%</span></div>
-                </div>
-            </div>
-            <div class="progress-bar-container">
-                <label>CSS</label>
-                <div class="progress neon">
-                    <div class="progress-bar" style="width: 75%;"><span>75%</span></div>
-                </div>
-            </div>
-            <div class="progress-bar-container">
-                <label>JavaScript</label>
-                <div class="progress neon">
-                    <div class="progress-bar" style="width: 70%;"><span>70%</span></div>
-                </div>
-            </div>
-            <!-- Añadir más tecnologías según sea necesario -->
+    <section id="proyectos">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <p>Actualmente estoy trabajando en nuevos proyectos. ¡Pronto podrás ver más aquí!</p>
         </div>
     </section>
 
-    <!-- Sección de Proyectos -->
-    <section id="proyectos" class="container">
-        <h2>Proyectos</h2>
-        <p>Actualmente trabajando en nuevos proyectos. ¡Pronto habrá más!</p>
-    </section>
-
-    <!-- Sección de Contactar -->
-    <section id="contacto" class="container">
-        <h2>Contactar</h2>
-        <form>
-            <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico:</label>
-                <input type="email" class="form-control" id="email" placeholder="tuemail@ejemplo.com">
-            </div>
-            <button type="button" class="btn btn-primary" onclick="copyEmail()">Copiar mi correo</button>
-        </form>
+    <section id="contacto">
+        <div class="container">
+            <h2>Contactar</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="tucorreo@example.com">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="copiarCorreo()">Copiar correo</button>
+            </form>
+        </div>
     </section>
 
     <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
