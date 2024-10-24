@@ -1,6 +1,5 @@
-function copiarCorreo() {
-    const correo = document.getElementById('email').value;
-    navigator.clipboard.writeText(correo).then(() => {
-        alert('Correo copiado: ' + correo);
-    });
-}
+// Código para el botón de copiar correo
+document.getElementById('copyEmail').addEventListener('click', function() {
+    const email = 'tu-correo@example.com';
+    navigator.clipboard.writeText(email);
+});
