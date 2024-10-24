@@ -9,11 +9,11 @@ h1, h2, h3 {
 
 /* Cambia el fondo de las secciones */
 .py-20 bg-gray-800 {
-    background-color: #212121; /* Cambia el color de fondo */
+    background-color: #181818; /* Cambia el color de fondo */
 }
 
 .bg-purple-500 {
-    box-shadow: 0 0 25px rgba(72, 0, 167, 0.733);
+    box-shadow: 0 0 20px rgba(72, 0, 167, 0.733);
 }
 
 .relative {

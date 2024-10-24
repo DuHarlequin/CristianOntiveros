@@ -1,40 +1,47 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> 
+<html lang="es"> 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Cristian Eduardo Ontiveros Castillo</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+    <title>Portafolio de Cristian Eduardo Ontiveros Castillo</title> <!-- Título de la pestaña del navegador -->
+    
+    <!-- Enlaza a la hoja de estilos de Tailwind CSS desde un CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Enlaza a tu hoja de estilos personalizada -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-900 text-white">
+<body class="bg-gray-900 text-white"> <!-- Clase que establece un fondo gris oscuro y texto blanco -->
 
     <!-- Sección de presentación -->
-    <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://i.pinimg.com/564x/95/bb/19/95bb190d3e8dbc2ca1e40c330528711c.jpg');">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="relative z-10 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold">Sobre Mí</h1>
+    <section class="relative h-screen flex items-center justify-center bg-cover bg-center" 
+             style="background-image: url('https://i.pinimg.com/564x/95/bb/19/95bb190d3e8dbc2ca1e40c330528711c.jpg');">
+        <!-- Se establece una imagen de fondo y se centra el contenido -->
+        <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Filtro negro semi-transparente para oscurecer la imagen -->
+        <div class="relative z-10 text-center"> <!-- Contenido principal de la sección -->
+            <h1 class="text-4xl md:text-6xl font-bold">Sobre Mí</h1> <!-- Título "Sobre Mí" -->
             <p class="mt-4 text-lg md:text-xl">Soy Cristian Eduardo Ontiveros Castillo, un desarrollador de software con habilidades en múltiples lenguajes de programación.</p>
-            <h1 class="text-4xl md:text-6xl font-bold">Objetivo</h1>
+            <h1 class="text-4xl md:text-6xl font-bold">Objetivo</h1> <!-- Título "Objetivo" -->
             <p class="mt-4 text-lg md:text-xl">Mi objetivo es seguir aprendiendo y creciendo en el campo del desarrollo de software, contribuyendo a proyectos innovadores y colaborando con equipos talentosos.</p>
-
         </div>
     </section>
 
     <!-- Sección de tecnologías -->
-    <section class="py-20 bg-gray-800">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center">Tecnologías</h2>
-            <div class="mt-10">
+    <section class="py-20 bg-gray-800"> <!-- Se establece el fondo gris para la sección -->
+        <div class="container mx-auto"> <!-- Contenedor centrado -->
+            <h2 class="text-3xl font-bold text-center">Tecnologías</h2> <!-- Título de la sección -->
+            <div class="mt-10"> <!-- Margen superior -->
+                <!-- Ejemplo de barra de habilidad -->
                 <div class="mb-5">
-                    <h3 class="text-lg font-semibold">HTML</h3>
+                    <h3 class="text-lg font-semibold">HTML</h3> <!-- Subtítulo para HTML -->
                     <div class="relative">
-                        <div class="w-full h-4 bg-gray-600 rounded">
-                            <div id="htmlBar" class="h-4 bg-purple-500 rounded" style="width: 90%;"></div>
+                        <div class="w-full h-4 bg-gray-600 rounded"> <!-- Fondo de la barra -->
+                            <div id="htmlBar" class="h-4 bg-purple-500 rounded" style="width: 90%;"></div> <!-- Barra de habilidad, que se llena al 90% -->
                         </div>
-                        <span id="htmlPercentage" class="absolute inset-0 flex items-center justify-center text-sm">90%</span>
+                        <span id="htmlPercentage" class="absolute inset-0 flex items-center justify-center text-sm">90%</span> <!-- Porcentaje centrado en la barra -->
                     </div>
                 </div>
+                <!-- Repetir para CSS, JavaScript, etc. -->
                 <div class="mb-5">
                     <h3 class="text-lg font-semibold">CSS</h3>
                     <div class="relative">
@@ -63,31 +70,30 @@
                     </div>
                 </div>
 
-
                 <!-- Agrega más tecnologías aquí -->
             </div>
         </div>
     </section>
 
     <!-- Sección de proyectos -->
-    <section class="py-20 bg-gray-800">
+    <section class="py-20 bg-gray-800"> <!-- Sección para mostrar proyectos -->
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold">Proyectos</h2>
-            <p class="mt-4">En este momento estoy trabajando en mis primeros proyectos.</p>
+            <h2 class="text-3xl font-bold">Proyectos</h2> <!-- Título de la sección -->
+            <p class="mt-4">En este momento estoy trabajando en mis primeros proyectos.</p> <!-- Descripción de la sección -->
         </div>
     </section>
 
     <!-- Sección de contacto -->
-    <section class="py-20 bg-gray-800">
+    <section class="py-20 bg-gray-800"> <!-- Sección para contacto -->
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold">Contactar</h2>
-            <form id="contactForm" class="mt-8">
-                <input type="email" placeholder="Tu correo electrónico" class="px-4 py-2 rounded-md text-gray-900" required>
-                <button type="button" id="copyEmail" class="ml-2 px-4 py-2 bg-purple-500 rounded-md">Copiar Correo</button>
+            <h2 class="text-3xl font-bold">Contactar</h2> <!-- Título de la sección -->
+            <form id="contactForm" class="mt-8"> <!-- Formulario de contacto -->
+                <input type="email" placeholder="Tu correo electrónico" class="px-4 py-2 rounded-md text-gray-900" required> <!-- Campo para correo -->
+                <button type="button" id="copyEmail" class="ml-2 px-4 py-2 bg-purple-500 rounded-md">Copiar Correo</button> <!-- Botón para copiar correo -->
             </form>
         </div>
     </section>
 
-    <script src="app.js"></script>
+    <script src="app.js"></script> <!-- Enlaza a tu archivo JavaScript -->
 </body>
 </html>
