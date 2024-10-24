@@ -7,8 +7,13 @@ h1, h2, h3 {
     text-shadow: 1px 1px 2px black;
 }
 
+/* Cambia el fondo de las secciones */
+.bg-gray-800 {
+    background-color: #212121; /* Cambia el color de fondo */
+}
+
 .bg-purple-500 {
-    box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
+    box-shadow: 0 0 10px rgba(72, 0, 167, 0.733);
 }
 
 .relative {
