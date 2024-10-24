@@ -8,7 +8,7 @@ h1, h2, h3 {
 }
 
 /* Cambia el fondo de las secciones */
-.py-20 bg-gray-800 {
+.bg-gray-800 {
     background-color: #181818; /* Cambia el color de fondo */
 }
 
