@@ -1,0 +1,51 @@
+{
+    "menu": {
+        "item2": "Sobre mí",
+        "item3": "Habilidades",
+        "item4": "Formación",
+        "item5": "Proyectos",
+        "item6": "Contacto"
+    },
+
+    "home": {
+        "home_text-1": "Hola! Soy",
+        "home_text-3": "Desarrollador Web & Software",
+        "parrafo-info": "Programador autodidacta enfocado en desarrollo web, de software y videojuegos. Apasionado por la creación de soluciones funcionales, dinámicas y visualmente atractivas. Me dedico a aprender continuamente y aplicar mis conocimientos en proyectos que ofrecen experiencias únicas e intuitivas para los usuarios. Actualmente, estoy trabajando en proyectos propios mientras amplio mis habilidades técnicas y creativas.",
+        "cv_button": "Descargar CV",
+        "contact_button": "Contacto"
+    },
+
+    "sobre-mi": {
+        "title": "Sobre mí",
+        "texto_sobreMi": "Soy un desarrollador apasionado de software, web y videojuegos, enfocado en aprender y superar desafíos constantemente. Aspiro a trabajar en una empresa donde pueda adquirir experiencia profesional, fortalecer mis habilidades y desarrollar mis propios proyectos en el futuro. <br><br>  Soy una persona proactiva, adaptable y creativa, con competencias en el trabajo en equipo, resolución de problemas bajo presión y aprendizaje rápido. La programación me motiva por su dificultad y la satisfacción que siento al completar un proyecto. Me esfuerzo por mantener un enfoque responsable, empático y comprometido, siempre guiado por los valores de lealtad y honestidad. <br><br> Tambien cuento como Propiedad de Ana Duran "
+    },
+
+    "habilidades": {
+        "title": "Habilidades"
+    },
+
+    "formacion": {
+        "title": "Formación",
+        "formacion1": "Estadística",
+        "tiempo-formacion1": "2019 - En curso",
+        "formacion2": "Desarrolladora Full-Stack",
+        "tiempo-formacion2": "2022 - En curso",
+        "formacion3": "Contabilización de Operaciones Comerciales y Financieras"
+    },
+
+    "proyectos": {
+        "title": "Proyectos",
+        "title-proyecto1": "Juego del Ahorcado",
+        "info-proyecto1": "Un juego donde el usuario debe adivinar la palabra secreta con un cierto número de oportunidades. La palabra se escoge de forma aleatoria por el programa y el usuario perderá en el momento en que la horca se complete.",
+        "title-proyecto2": "Portafolio",
+        "info-proyecto2": "Mi portafolio web personal, donde se encuentran algunos de mis proyectos más destacados, mis habilidades técnicas y un poco sobre mi formación.",
+        "title-proyecto3": "Encriptador de Texto",
+        "info-proyecto3": "Un ecriptador donde el usuario puede escribir un texto y el encriptador lo codifica con llaves ya programadas. El encriptador también permite desencriptar el texto."
+    },
+
+    "contacto": {
+        "title": "Contacto",
+        "text": "Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.",
+        "btn-enviar": "Enviar"
+    }
+}

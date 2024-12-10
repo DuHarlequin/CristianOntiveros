@@ -1,0 +1,51 @@
+{
+    "menu": {
+        "item2": "About me",
+        "item3": "Skills",
+        "item4": "Training",
+        "item5": "Projects",
+        "item6": "Contact"
+    },
+
+    "home": {
+        "home_text-1": "Hi! I'm",
+        "home_text-3": "Web & Software Developer",
+        "parrafo-info": "Self-taught programmer focused on web, software and video game development. Passionate about creating functional, dynamic and visually appealing solutions. I am dedicated to continuously learn and apply my knowledge in projects that offer unique and intuitive experiences for users. Currently, I am working on my own projects while expanding my technical and creative skills.",
+        "cv_button": "Download CV",
+        "contact_button": "Contact"
+    },
+
+    "sobre-mi": {
+        "title": "About me",
+        "texto_sobreMi": "I am a passionate software, web and video game developer, focused on constantly learning and overcoming challenges. I aspire to work in a company where I can gain professional experience, enhance my skills and develop my own projects in the future. <br><br> I am a proactive, adaptable and creative person, with skills for teamwork, problem solving under pressure and fast learning. Programming motivates me because of its difficulty and the satisfaction I feel when completing a project. I strive to maintain a responsible, empathetic and committed attitude, always guided by the values of loyalty and honesty. <br><br> I also count as Property of Ana Duran."
+    },
+
+    "habilidades": {
+        "title": "Skills"
+    },
+
+    "formacion": {
+        "title": "Training",
+        "formacion1": "Statistic",
+        "tiempo-formacion1": "2019 - In progress",
+        "formacion2": "Full-Stack Developer",
+        "tiempo-formacion2": "2022 - In progress",
+        "formacion3": "Accounting for Commercial and Financial Transactions"
+    },
+
+    "proyectos": {
+        "title": "Projects",
+        "title-proyecto1": "Hangman Game",
+        "info-proyecto1": "A game where the user must guess the secret word with a certain number of chances. The word is chosen randomly by the program and the user will lose the moment the gallows is completed.",
+        "title-proyecto2": "Portfolio",
+        "info-proyecto2": "My personal web portfolio, where you can find some of my most outstanding projects, my technical skills and a bit about my background.",
+        "title-proyecto3": "Text Encryptor",
+        "info-proyecto3": "An encryptor where the user can type a text and the encryptor encrypts it with pre-programmed keys. The encryptor can also decrypt the text."
+    },
+
+    "contacto": {
+        "title": "Contact",
+        "text": "Complete the form below and I will contact you as soon as possible.",
+        "btn-enviar": "Send"
+    }
+}
